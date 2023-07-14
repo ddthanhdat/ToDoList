@@ -40,7 +40,7 @@ class RegisterViewViewModel: ObservableObject{
 		let db = Firestore.firestore()
 
 		db.collection("users")
-			.document("id")
+			.document(id)
 			.setData(newUser.asDictionary())
 	}
 

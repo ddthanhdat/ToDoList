@@ -38,6 +38,11 @@ struct LoginView: View {
 					TLButton(title: "Login") {
 						viewModel.login()
 					}.padding()
+					
+					
+					TLButton(title: "Debug") {
+						viewModel.debug()
+					}.padding()
 				}
 				.offset(y: -50)
 				
